@@ -493,6 +493,7 @@ if ($config{crossconf}) {
     build::probe::thread_local_cross(\%config, \%defaults);
     build::probe::substandard_pow_cross(\%config, \%defaults);
     build::probe::substandard_log_cross(\%config, \%defaults);
+    build::probe::substandard_trig_cross(\%config, \%defaults);
     build::probe::unaligned_access_cross(\%config, \%defaults);
     build::probe::ptr_size_cross(\%config, \%defaults);
 }
@@ -502,6 +503,7 @@ else {
     build::probe::thread_local_native(\%config, \%defaults);
     build::probe::substandard_pow(\%config, \%defaults);
     build::probe::substandard_log(\%config, \%defaults);
+    build::probe::substandard_trig(\%config, \%defaults);
     build::probe::unaligned_access(\%config, \%defaults);
     build::probe::ptr_size_native(\%config, \%defaults);
 }
